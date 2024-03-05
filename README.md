@@ -6,53 +6,15 @@ Atom's iconic One Dark theme, now in deep midnight blurple.
 
 [![Preview in vscode.dev](https://img.shields.io/badge/preview%20in-vscode.dev-blue)](https://vscode.dev/theme/zhuangtongfa.Material-theme) [![Version](https://vsmarketplacebadges.dev/version/zhuangtongfa.Material-theme.png)](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme)
 
-## SCREENSHOT
+## SCREENSHOTS
 
 ![ScreenShot](./readme/clean_demo.png)
 
-### Italic
-
-![ScreenShot](https://cdn.jsdelivr.net/gh/binaryify/onedark-pro/screenshots/italic.png)
-
-### Default theme
-
-![ScreenShot](https://cdn.jsdelivr.net/gh/binaryify/onedark-pro/screenshots/editor1.png)
-
-### Flat theme
-
-![ScreenShot](https://cdn.jsdelivr.net/gh/binaryify/onedark-pro/screenshots/editorflat.png)
-
-### Darker theme
-
-![ScreenShot](./screenshots/editordarker.png)
-
-### Retro theme
-
-![ScreenShot](./screenshots/retro.png)
-
-### Gnome theme
-
-![ScreenShot](./screenshots/gnome.png)
-
-### Terminal
-
-![ScreenShot](https://cdn.jsdelivr.net/gh/binaryify/onedark-pro/screenshots/terminal.png)
+![ScreenShot](./readme/full_demo.png)
 
 ## Donation
 
-If you like this extension, you could donate via **[PayPal](https://www.paypal.me/binaryify)** It will encourage me to make this extension better and better!
-
-### Setting
-
-![ScreenShot](https://cdn.jsdelivr.net/gh/binaryify/onedark-pro/screenshots/setting.png)
-
-### Built in themes
-
-![built-in themes](https://cdn.jsdelivr.net/gh/binaryify/onedark-pro/screenshots/built-in-themes.png)
-
-### Notice
-
-Setting only support default theme(One Dark Pro).
+If you like this extension, you could donate to the creator of its predecessor, One Dark Pro, via **[PayPal](https://www.paypal.me/binaryify)** It will encourage them to make the original extension better and better, which will in turn make this one better!
 
 ## Markdown preview style
 
@@ -61,7 +23,7 @@ You can toggle whether to use markdown style in vscode setting (default use)
 
 ### Suggest Editor Settings
 
-```
+```json
  "editor.fontSize": 20,
  "editor.lineHeight": 30,
  "editor.fontFamily": "JetBrains Mono",
@@ -88,7 +50,7 @@ or use the setting `editor.tokenColorCustomizations`
 
 ```json
 "editor.tokenColorCustomizations": {
-  "[One Dark Pro]": {
+  "[One Midnight]": {
     "textMateRules": [
       {
         "scope": ["source.python"],
@@ -184,7 +146,7 @@ Example of customizing semantic colors in settings.json:
 ```jsonc
 {
   "editor.semanticTokenColorCustomizations": {
-    "[One Dark Pro]": {
+    "[One Midnight]": {
       // Apply to this theme only
       "enabled": true,
       "rules": {
@@ -218,7 +180,7 @@ includes instructions on how to install and edit the theme.
 
 To help with documentation, first fork and clone this repository.
 
-`cd` to the `OneDark-Pro` folder
+`cd` to the `OneMidnight` folder
 
 Run `yarn`
 
