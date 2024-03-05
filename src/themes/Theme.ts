@@ -3,7 +3,7 @@ import data from './themeData'
 async function createEditorTokens(config: ThemeConfiguration) {
   return config.editorTheme in data.editorThemes
     ? (await data.editorThemes[config.editorTheme]()).default
-    : (await data.editorThemes['One Dark Pro']()).default
+    : (await data.editorThemes['One Midnight']()).default
 }
 const uniqBy = (arr, fn, set = new Set()) =>
   arr.filter((el) =>
@@ -84,15 +84,15 @@ function configFactory(configuration) {
       tomlArrayKey: {
         foreground: colorObj.chalky,
       },
-      "memberOperatorOverload": {
+      memberOperatorOverload: {
         foreground: colorObj.purple,
-      }
+      },
     },
     tokenColors: result,
   }
 }
 export class Theme {
-  name = 'One Dark Pro'
+  name = 'One Midnight'
   type = 'dark'
   semanticHighlighting = true
   semanticTokenColors

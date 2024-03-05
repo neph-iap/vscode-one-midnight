@@ -12,23 +12,8 @@ export function writeFile(path: string, data: unknown): Promise<void> {
 
 async function main() {
   writeFile(
-    join(__dirname, '..', 'themes', 'OneDark-Pro.json'),
+    join(__dirname, '..', 'themes', 'OneMidnight.json'),
     await Theme.init(defaultSettings)
-  )
-
-  writeFile(
-    join(__dirname, '..', 'themes', 'OneDark-Pro-flat.json'),
-    await Theme.init(flatConfig)
-  )
-
-  writeFile(
-    join(__dirname, '..', 'themes', 'OneDark-Pro-darker.json'),
-    await Theme.init(darkerConfig)
-  )
-
-  writeFile(
-    join(__dirname, '..', 'themes', 'OneDark-Pro-mix.json'),
-    await Theme.init(mixConfig)
   )
 }
 main()

@@ -1,17 +1,17 @@
 {
-  "name": "material-theme",
-  "displayName": "One Dark Pro",
-  "description": "Atom's iconic One Dark theme for Visual Studio Code",
+  "name": "one-midnight",
+  "displayName": "One Midnight",
+  "description": "Atom's iconic One Dark theme for Visual Studio Code, now in midnight.",
   "version": "3.16.2",
-  "publisher": "zhuangtongfa",
+  "publisher": "Violet Iapalucci",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Binaryify/OneDark-Pro/issues"
+    "url": "https://github.com/one-midnight/vscode/issues"
   },
   "homepage": "https://binaryify.github.io/OneDark-Pro/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Binaryify/OneDark-Pro"
+    "url": "https://github.com/one-midnight/vscode"
   },
   "engines": {
     "vscode": "^1.76.0"
@@ -53,7 +53,8 @@
     "build:sass": "yarn sass --no-source-map scss:styles && yarn sass --no-source-map scss:styles/origin",
     "compile-web": "webpack --config ./build/web-extension.webpack.config.js",
     "watch-web": "webpack --watch --config ./build/web-extension.webpack.config.js",
-    "package-web": "webpack --mode production --devtool hidden-source-map --config ./build/web-extension.webpack.config.js"
+    "package-web": "webpack --mode production --devtool hidden-source-map --config ./build/web-extension.webpack.config.js",
+    "build-local": "vsce package && code --install-extension .\\one-midnight-3.16.2.vsix"
   },
   "prettier": {
     "singleQuote": true,
@@ -67,111 +68,80 @@
     ],
     "commands": [
       {
-        "command": "oneDarkPro.showChangelog",
-        "title": "%description.oneDarkPro.showChangelog%",
-        "category": "OneDark Pro"
+        "command": "oneMidnight.showChangelog",
+        "title": "%description.oneMidnight.showChangelog%",
+        "category": "OneMidnight"
       },
       {
-        "command": "oneDarkPro.setVivid",
-        "title": "%description.oneDarkPro.setVivid%",
-        "category": "OneDark Pro"
+        "command": "oneMidnight.setVivid",
+        "title": "%description.oneMidnight.setVivid%",
+        "category": "OneMidnight"
       },
       {
-        "command": "oneDarkPro.cancelVivid",
-        "title": "%description.oneDarkPro.cancelVivid%",
-        "category": "OneDark Pro"
+        "command": "oneMidnight.cancelVivid",
+        "title": "%description.oneMidnight.cancelVivid%",
+        "category": "OneMidnight"
       },
       {
-        "command": "oneDarkPro.setItalic",
-        "title": "%description.oneDarkPro.setItalic%",
-        "category": "OneDark Pro"
+        "command": "oneMidnight.setItalic",
+        "title": "%description.oneMidnight.setItalic%",
+        "category": "OneMidnight"
       },
       {
-        "command": "oneDarkPro.cancelItalic",
-        "title": "%description.oneDarkPro.cancelItalic%",
-        "category": "OneDark Pro"
+        "command": "oneMidnight.cancelItalic",
+        "title": "%description.oneMidnight.cancelItalic%",
+        "category": "OneMidnight"
       },
       {
-        "command": "oneDarkPro.setBold",
-        "title": "%description.oneDarkPro.setBold%",
-        "category": "OneDark Pro"
+        "command": "oneMidnight.setBold",
+        "title": "%description.oneMidnight.setBold%",
+        "category": "OneMidnight"
       },
       {
-        "command": "oneDarkPro.cancelBold",
-        "title": "%description.oneDarkPro.cancelBold%",
-        "category": "OneDark Pro"
+        "command": "oneMidnight.cancelBold",
+        "title": "%description.oneMidnight.cancelBold%",
+        "category": "OneMidnight"
       }
     ],
     "themes": [
       {
-        "label": "One Dark Pro",
+        "label": "One Midnight",
         "uiTheme": "vs-dark",
-        "path": "./themes/OneDark-Pro.json"
-      },
-      {
-        "label": "One Dark Pro Flat",
-        "uiTheme": "vs-dark",
-        "path": "./themes/OneDark-Pro-flat.json"
-      },
-      {
-        "label": "One Dark Pro Darker",
-        "uiTheme": "vs-dark",
-        "path": "./themes/OneDark-Pro-darker.json"
-      },
-      {
-        "label": "One Dark Pro Mix",
-        "uiTheme": "vs-dark",
-        "path": "./themes/OneDark-Pro-mix.json"
+        "path": "./themes/OneMidnight.json"
       }
     ],
     "configuration": {
-      "title": "One Dark Pro",
+      "title": "One Midnight",
       "properties": {
-        "oneDarkPro.editorTheme": {
+        "oneMidnight.editorTheme": {
           "type": "string",
-          "default": "One Dark Pro",
-          "markdownDescription": "%description.oneDarkPro.editorTheme%",
+          "default": "One Midnight",
+          "markdownDescription": "%description.oneMidnight.editorTheme%",
           "enum": [
-            "One Dark Pro",
-            "One Dark Pro Flat",
-            "Nord",
-            "Solarized",
-            "Solarized Flat",
-            "Shadow",
-            "Panda",
-            "Ayu",
-            "VS Code",
-            "Just Black",
-            "One Dark Pro Darker",
-            "One Dark Pro Mix",
-            "Ocean",
-            "Tokyo",
-            "Retro",
-            "Gnome",
-            "Dark Modern"
+            "One Midnight"
           ]
         },
-        "oneDarkPro.italic": {
+        "oneMidnight.italic": {
           "type": "boolean",
           "default": true,
-          "description": "%description.oneDarkPro.italic%"
+          "description": "%description.oneMidnight.italic%"
         },
-        "oneDarkPro.vivid": {
+        "oneMidnight.vivid": {
           "type": "boolean",
           "default": false,
-          "markdownDescription": "%description.oneDarkPro.vivid%"
+          "markdownDescription": "%description.oneMidnight.vivid%"
         },
-        "oneDarkPro.bold": {
+        "oneMidnight.bold": {
           "type": "boolean",
           "default": false,
-          "markdownDescription": "%description.oneDarkPro.bold%"
+          "markdownDescription": "%description.oneMidnight.bold%"
         },
-        "oneDarkPro.markdownStyle": {
+        "oneMidnight.markdownStyle": {
           "type": "boolean",
           "default": true,
-          "description": "%description.oneDarkPro.markdownStyle%"
+          "description": "%description.oneMidnight.markdownStyle%"
         },
-        "oneDarkPro.color": {
+        "oneMidnight.color": {
           "type": "object",
           "scope": "resource",
           "default": {
@@ -251,8 +221,10 @@
   },
   "icon": "icon.png",
   "keywords": [
-    "one dark",
+    "one midnight",
+    "onemidnight",
     "onedark",
+    "one dark",
     "one dark pro",
     "onedark pro",
     "theme",

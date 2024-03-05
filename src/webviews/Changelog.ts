@@ -6,11 +6,11 @@ import { marked } from 'marked'
 
 export class ChangelogWebview extends WebviewController {
   get id(): string {
-    return 'Onedark Pro.Changelog'
+    return 'OneMidnight.Changelog'
   }
 
   get title(): string {
-    return 'Onedark Pro theme Changelog'
+    return 'OneMidnight theme Changelog'
   }
 
   get content(): Promise<string> {

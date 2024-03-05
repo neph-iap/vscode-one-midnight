@@ -16,9 +16,7 @@ export async function updateTheme() {
 
   let promiseArr = []
   promiseArr = [
-    writeTheme('OneDark-Pro.json'),
-    writeTheme('OneDark-Pro-flat.json', 'One Dark Pro Flat'),
-    writeTheme('OneDark-Pro-darker.json', 'One Dark Pro Darker'),
+    writeTheme('OneMidnight.json', 'One Midnight'),
   ]
   await Promise.all(promiseArr)
   promptToReload()

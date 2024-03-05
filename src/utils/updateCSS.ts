@@ -5,7 +5,7 @@ import { join } from 'path'
 const getCSSPath = file => join(__dirname, '../../', 'styles', file)
 
 export function updateCSS() {
-  const configuration = workspace.getConfiguration('oneDarkPro')
+  const configuration = workspace.getConfiguration('oneMidnight')
   const files = [
     'atom-one-dark-inside.css',
     'base-inside.css',

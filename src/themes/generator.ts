@@ -7,7 +7,7 @@ export const generateTheme = {
     return await Theme.init(defaultSettings)
   },
   fromSettings: async function (themeName?: string) {
-    const configuration = workspace.getConfiguration('oneDarkPro')
+    const configuration = workspace.getConfiguration('oneMidnight')
     let colorObj = {}
     colorObjArr.forEach((item) => {
       let value = configuration.get<object>('color')[item]
@@ -15,7 +15,7 @@ export const generateTheme = {
         colorObj[item] = value
       }
     })
-    const buildConfig={
+    const buildConfig = {
       bold: configuration.get<boolean>('bold', defaultSettings.bold),
       editorTheme:
         themeName ||

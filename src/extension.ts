@@ -30,7 +30,7 @@ export async function activate() {
         { defaultVal: true, type: 'italic' },
         { defaultVal: false, type: 'vivid' },
       ]
-      const configuration = workspace.getConfiguration('oneDarkPro')
+      const configuration = workspace.getConfiguration('oneMidnight')
       let isDefaultConfig = configArr.every((item) => {
         return configuration.get<boolean>(item.type) === item.defaultVal
       })
@@ -56,31 +56,31 @@ export async function activate() {
 
   // Observe changes in the config
   workspace.onDidChangeConfiguration((event) => {
-    if (event.affectsConfiguration('oneDarkPro')) {
+    if (event.affectsConfiguration('oneMidnight')) {
       updateTheme()
       updateCSS()
     }
   })
-  Commands.registerCommand('oneDarkPro.showChangelog', () => {
+  Commands.registerCommand('oneMidnight.showChangelog', () => {
     new ChangelogWebview().show()
   })
 
   const settingArr = ['Vivid', 'Italic', 'Bold']
   settingArr.forEach((settingItem) => {
-    Commands.registerCommand(`oneDarkPro.set${settingItem}`, () => {
+    Commands.registerCommand(`oneMidnight.set${settingItem}`, () => {
       workspace
         .getConfiguration()
         .update(
-          `oneDarkPro.${settingItem.toLowerCase()}`,
+          `oneMidnight.${settingItem.toLowerCase()}`,
           true,
           ConfigurationTarget.Global
         )
     })
-    Commands.registerCommand(`oneDarkPro.cancel${settingItem}`, () => {
+    Commands.registerCommand(`oneMidnight.cancel${settingItem}`, () => {
       workspace
         .getConfiguration()
         .update(
-          `oneDarkPro.${settingItem.toLowerCase()}`,
+          `oneMidnight.${settingItem.toLowerCase()}`,
           false,
           ConfigurationTarget.Global
         )
