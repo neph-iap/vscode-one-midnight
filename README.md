@@ -16,11 +16,6 @@ Atom's iconic One Dark theme, now in deep midnight blurple.
 
 If you like this extension, you could donate to the creator of its predecessor, One Dark Pro, via **[PayPal](https://www.paypal.me/binaryify)** It will encourage them to make the original extension better and better, which will in turn make this one better!
 
-## Markdown preview style
-
-![Markdown](https://cdn.jsdelivr.net/gh/binaryify/onedark-pro/screenshots/markdown.png)
-You can toggle whether to use markdown style in vscode setting (default use)
-
 ### Suggest Editor Settings
 
 ```json
@@ -117,7 +112,7 @@ You could set this in your setting.json to make code be italic
 
 ## Python & Pylance users
 
-Python users I recommend using [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance) extension for fast, feature-rich language support.
+For Python users I recommend using the [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance) extension for fast, feature-rich language support.
 
 Semantic colors can be customized in settings.json by associating the Pylance semantic token types and modifiers with the desired colors.
 

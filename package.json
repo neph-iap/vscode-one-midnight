@@ -2,16 +2,15 @@
   "name": "one-midnight",
   "displayName": "One Midnight",
   "description": "Atom's iconic One Dark theme for Visual Studio Code, now in midnight.",
-  "version": "3.16.2",
+  "version": "1.0.0",
   "publisher": "Violet Iapalucci",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/one-midnight/vscode/issues"
+    "url": "https://github.com/one-midnight-theme/vscode-one-midnight/issues"
   },
-  "homepage": "https://binaryify.github.io/OneDark-Pro/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/one-midnight/vscode"
+    "url": "https://github.com/one-midnight-theme/vscode-one-midnight"
   },
   "engines": {
     "vscode": "^1.76.0"
@@ -269,28 +268,11 @@
     },
     "virtualWorkspaces": true
   },
-  "badges": [
-    {
-      "url": "https://vsmarketplacebadges.dev/version/zhuangtongfa.Material-theme.png",
-      "href": "https://marketplace.visualstudio.com/items/zhuangtongfa.Material-theme",
-      "description": "Extension version"
-    },
-    {
-      "url": "https://vsmarketplacebadges.dev/installs/zhuangtongfa.Material-theme.png",
-      "href": "https://marketplace.visualstudio.com/items/zhuangtongfa.Material-theme",
-      "description": "Extension installs"
-    },
-    {
-      "url": "https://vsmarketplacebadges.dev/rating/zhuangtongfa.Material-theme.png",
-      "href": "https://marketplace.visualstudio.com/items/zhuangtongfa.Material-theme",
-      "description": "Extension Rating"
-    }
-  ],
+  "badges": [],
   "actionButtons": {
     "docs": null,
     "build:theme": null,
     "build:ts": null,
-    "build": null,
     "lint": null,
     "watch:theme": null,
     "watch:ts": null,
