@@ -285,5 +285,20 @@
       "href": "https://marketplace.visualstudio.com/items/zhuangtongfa.Material-theme",
       "description": "Extension Rating"
     }
-  ]
+  ],
+  "actionButtons": {
+    "docs": null,
+    "build:theme": null,
+    "build:ts": null,
+    "build": null,
+    "lint": null,
+    "watch:theme": null,
+    "watch:ts": null,
+    "vscode:prepublish": null,
+    "package": null,
+    "build:sass": null,
+    "compile-web": null,
+    "watch-web": null,
+    "package-web": null
+  }
 }
