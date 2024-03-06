@@ -12,21 +12,21 @@ Atom's iconic One Dark theme, now in deep midnight blurple.
 
 ![ScreenShot](./readme/full_demo.png)
 
-## Donation
+## Installation
 
-If you like this extension, you could donate to the creator of its predecessor, One Dark Pro, via **[PayPal](https://www.paypal.me/binaryify)** It will encourage them to make the original extension better and better, which will in turn make this one better!
+One Midnight is not yet available on the VSCode Marketplace, but you can install it locally very easily:
 
-### Suggest Editor Settings
-
-```json
- "editor.fontSize": 20,
- "editor.lineHeight": 30,
- "editor.fontFamily": "JetBrains Mono",
+```bash
+git clone https://github.com/one-midnight-theme/vscode-one-midnight.git && cd vscode-one-midnight && npm run build-local
 ```
 
-JetBrains Mono Download: https://www.jetbrains.com/lp/mono
+**Note: You must have [yarn](https://yarnpkg.com/getting-started/install) installed to do this.**
 
-### Tweaks & theming
+## Donation
+
+If you like this extension, you could donate to the creator of its predecessor, One Dark Pro, via **[PayPal](https://www.paypal.me/binaryify)**. It will encourage them to make the original extension better and better, which will in turn make this one better!
+
+## Tweaks & theming
 
 If you want to play around with new colors, use the setting
 `workbench.colorCustomizations` to customize the currently selected theme. For

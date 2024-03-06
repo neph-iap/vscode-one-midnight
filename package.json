@@ -53,7 +53,7 @@
     "compile-web": "webpack --config ./build/web-extension.webpack.config.js",
     "watch-web": "webpack --watch --config ./build/web-extension.webpack.config.js",
     "package-web": "webpack --mode production --devtool hidden-source-map --config ./build/web-extension.webpack.config.js",
-    "build-local": "vsce package && code --install-extension .\\one-midnight-3.16.2.vsix"
+    "build-local": "vsce package && code --install-extension .\\one-midnight-1.0.0.vsix --force"
   },
   "prettier": {
     "singleQuote": true,
