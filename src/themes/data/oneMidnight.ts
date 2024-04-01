@@ -73,7 +73,7 @@ export default {
   // 'editorSuggestWidget.background': '#1e2227',
   'editorSuggestWidget.background': '#130c27',
   'editorSuggestWidget.border': '#181a1f',
-  'editorSuggestWidget.selectedBackground': '#2c313a',
+  'editorSuggestWidget.selectedBackground': '#232641',
   //   'editorSuggestWidget.selectedBackground': '#232641',
   'editorWarning.foreground': '#d19a66',
   'editorWhitespace.foreground': '#ffffff1d',

@@ -1,7 +1,7 @@
 import { workspace } from 'vscode'
-import { Theme } from './Theme'
 import * as defaultSettings from '../defaultConfig.json'
 import colorObjArr from '../utils/colorObjArr'
+import { Theme } from './Theme'
 export const generateTheme = {
   default: async function () {
     return await Theme.init(defaultSettings)
